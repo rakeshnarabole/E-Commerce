@@ -50,7 +50,7 @@ public class OrdersMapper {
 		orderDto.setTotalPrice(orders.getTotalPrice());
 
 		List<CartItemDto> cartItemDtolist = new ArrayList<>();
-		List<CartItem> cartItems = orders.getOrdercartItems();
+		List<CartItem> cartItems = orders.getOrderCartItems();
 
 		for (CartItem ci : cartItems) {
 			CartItemDto dto = new CartItemDto();

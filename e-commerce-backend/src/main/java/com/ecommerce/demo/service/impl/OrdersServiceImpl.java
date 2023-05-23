@@ -123,7 +123,7 @@ public class OrdersServiceImpl implements OrderService {
 		List<CartItem> productsInCart = customer.getCustomerCart().getCartItems();
 		List<CartItem> productsInOrder = new ArrayList<>(productsInCart);
 
-		newOrder.setOrdercartItems(productsInOrder);
+		newOrder.setOrderCartItems(productsInOrder);
 		newOrder.setTotalPrice(customer.getCustomerCart().getCartTotal());
 		LocalDate newDate = LocalDate.now().plusDays(5);
 
